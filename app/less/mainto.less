@@ -1,13 +1,14 @@
 @import "grandfile.less";
 
 
-h1, h2, h4, h5, h6 { .m-speed;  font-family: @fonttxt; text-align: left; font-weight: 600; float: left; display: block; width: 100%;}
+h1, h2, h4, h5, h6 { .m-speed;  font-family: @fonttxt; text-align: left; float: left; display: block; width: 100%;}
 
-h1 {font-size: 28px;}
-h2 {font-size: 24px;}
-h3 {font-size: 28px;}
-h4 {font-size: 20px;}
-h6 {font-size: 13px;}
+h1 {font-size: 28px; font-weight: 700;}
+h2 {font-size: 24px; font-weight: 700;}
+h3 {font-size: 21px; font-weight: 700;}
+h4 {font-size: 21px; font-weight: 600;}
+h5 {font-size: 19px; font-weight: 400;}
+h6 {font-size: 18px; font-weight: 400;}
 
 .slick-arrow:hover  {background-color: @colfirm !important;}
 
@@ -29,7 +30,7 @@ header { margin-bottom: 15px;
 .h__info-line {float: left; width: 100%; font-size: 16px; font-weight: 700; display: block; padding: 12px 0 18px; text-transform: uppercase;} 
 .h__firm-line {float: left; width: 100%; height: 96px; }
 .h__logo-block {float: left; width: 300px; height: 100%; display: inline-table;
-.logo {width: 271px; height: 96px; .bgCCC; background: url(../img/logo.png);}}
+.logo {display: inline-block; width: 271px; height: 96px; .bgCCC; background: url(../img/logo.png);}}
 .h__contacts-block {width: 600px; height: 100%; float: left;
 .h__contacts-block_phone-block {float: left; width: 100%; height: 58px; display: table;
 .h__contacts-block_phone-block_num {display: inline-block; margin: 0 16px; font-family: @fonttxt2; font-size: 20px;  font-weight: 700;
@@ -37,7 +38,7 @@ header { margin-bottom: 15px;
 }    
 } 
     
-.h__contacts-block_phone-block_but {display: inline-block; margin: 0 16px; padding: 14px 26px 16px; background: #efba50; border-radius: 32px; font-size: 16px; text-transform: uppercase; font-weight: 700; color: #482f24; border: solid 2px @colfirm2; .m-speed;  font-family: @fonttxt3;
+.h__contacts-block_phone-block_but {display: inline-block; margin: 0 16px; padding: 12px 26px 16px; background: #efba50; border-radius: 32px; font-size: 16px; text-transform: uppercase; font-weight: 700; color: #482f24; border: solid 2px @colfirm2; .m-speed;  font-family: @fonttxt3;
 .ico {display: inline-block; margin-right: 10px; .bgCCC; background: url(../img/phone.svg); width: 16px; height: 21px; position: relative; top:5px;}    
 }
     
@@ -85,11 +86,39 @@ nav  {
   height: 45px;
     .content {height: 100%;}
 ul {float: left; width: 100%; height: 100%;
-li {float: left; display: inline-table; height: 100%;
-a {color: #fff; font-size: 15px; padding: 4px 34px; display: block;  border-right: solid 1px #fff; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; 
-.m-speed}
-a:hover {color: @colfirm2;}
+li {float: left; display: inline-table; height: 100%; position: relative;
+a {color: #fff; font-size: 15px; padding: 4px 34px; display: block;  border-right: solid 1px #da6969; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; .m-speed;   
 }
+
+
+    
+
+ul {position: absolute; display: none; left:0px;  bottom: -200px; padding: 8px 17px; width: 290px; height: 200px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;     z-index: 99999999; .med-speed;
+
+  background-image: -moz-linear-gradient( 90deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+  background-image: -ms-linear-gradient( 90deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+
+   
+    
+    
+li {float: left; width: 100%; height: auto;
+a {display: inline-block; color: @coltxt; padding: 4px 0;font-size: 14px; float: left; width: 100%; text-transform: none; border: solid 0px; font-weight: 400; } 
+a:hover {font-weight: 700; color: @coltxt;  } 
+}    
+}    
+    
+    
+}
+    
+li:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+  background-image: -ms-linear-gradient( 90deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);    
+a {color:@coltxt; border: solid 1px transparent;}    
+    ul{display: block; li { background: transparent;} 
+}}
+    
 li:last-child  {a {border-right: solid 0px;}}    
 }
 }
@@ -169,10 +198,10 @@ border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>teeser-index
 
-.teeser-index {  margin-top: 45px; width: calc(~"100% + 20px"); margin-left: -10px; overflow: hidden;
+.teeser-index {  margin-top: 45px; width: calc(~"100% + 20px"); margin-left: -10px;
     
 .teeser-index__item {position: relative; display: inline-block; float: left; width: 33.333333%; height: 100px; background: #eeeceb;
-border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px;
+border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px; overflow: hidden;
     
 .teeser-index__item_t-block { float: left; width: 100%; height: 100%; padding: 20px 0 0 24px; background: #bc4040; display: table; position: relative; overflow: hidden;
 
@@ -293,19 +322,6 @@ span {font-weight: 700;  color: #999999; float: left; margin-bottom: 12px;font-s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //............................................ content section .....................................................//
 .index-page { margin-top: 12px;
 .index-page__left-block {float: left; width: 280px; display: inline-block;}  
@@ -353,7 +369,7 @@ border-bottom: dotted 1px #dad7d4;   .m-speed;  color: @colfirm;
 }
     
 .float-content {position: relative; display: block; float: left; width: 880px; margin-left: 20px; min-height: 500px;
-.paginator {float: left; width: 100%; padding: 12px 0 0;
+.paginator {float: left; width: 100%;
 a, span {float: left;font-size: 14px; color: #a0a0a0;display: inline-block; margin-right: 5px;}   
     a:hover {color: @colfirm}    
 }    
@@ -472,7 +488,7 @@ a.stick-txt:hover {background: #fff; color: @colfirm;}
 // teeser    
     
   
-.index-page__teeser {float: left; width: 280px; min-height: 280px; margin-top: 80px;
+.index-page__teeser {float: left; width: 280px; min-height: 280px; margin-top: 80px;  overflow: hidden;
 .index-page__teeser_item {float: left; width: 100%; height: 200px; position: relative; margin-bottom: 40px;
 .index-page__teeser_item_t-block {float: left; width: 100%; height: 50%; padding: 20px 0 0 24px; background: @colfirm; display: table; position: relative;
 overflow: hidden;
@@ -503,15 +519,91 @@ i { .bgCCC; background: url(../img/next.svg); display: block; width: 36px; heigh
 //............................................ content section close ...............................................//
 
 
-.index-txt { margin-top: 40px;
+.index-txt { margin-top: 40px; float: left; width: 100%;
 article {float: left; width: 100%;
 h2 { margin-bottom: 20px; float: left;  display: block; width: 100%;}    
 
-p {font-size: 16px; font-weight: 600; margin: 17px 0;  float: left;  display: block; width: 100%;}    
+p {font-size: 16px; font-weight: 600; margin: 17px 0;  float: left;  display: block; width: 100%;
+
+a {color:#d57979; text-decoration:underline;}    
+a:hover {color:#950d0d; }    
+a::visited {color:@colfirm2; }    
+    
+}
+    
+.desc {padding: 25px 20px; font-style: italic; border: solid 2px @colfirm2;}    
+    
+    
+ul { float: left; width: 100%; padding-bottom: 8px; margin-bottom: 18px;  
+li { position: relative; float: left; width: 100%; font-size: 16px; padding: 12px 0; padding-left: 17px; font-weight: 600;}  
+li::before { content: ''; position: absolute; left: 0px; top: 19px; width: 6px; height: 6px; background: @colfirm; border-radius: 50%;}    
+    
+}  
+    
+ol { float: left; width: 100%; padding-bottom: 8px; margin-bottom: 18px; counter-reset: li; padding: 0; list-style: none; margin-left: 18px;
+li { position: relative; float: left; width: 100%; font-size: 16px; padding: 12px 0; font-weight: 600;
+}
+    
+li::before { content: counter(li); content: counter(li) '. '; counter-increment: li; position: absolute; top: 8px; left: -2em; width: 2em; padding: 4px 0; text-align: center; font-size: 15px;
+}    
+    
+}  
+    
+.button { margin-top: 10px; display: inline-block; float: left; border: solid 3px #efba50; color: #896251; padding: 7px 25px 8px; padding: 11px 25px 12px; border-radius: 35px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; font-family: @fonttxt3; text-decoration: none; background: #fff; margin-right: 25px;
+text-transform:  uppercase; font-size: 16px;   
+}
+.button:hover {background: @colfirm2;  color: #896251; }
+.button:disabled {background: #fff;  color: #d5d4d4; border: solid 3px #d5d4d4;}
+      
+.button-min { margin-top: 10px; display: inline-block; float: left; border: solid 2px #efba50; color: #896251; padding: 7px 25px 8px; border-radius: 35px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; font-family: @fonttxt3; text-decoration: none; background: #fff; margin-right: 25px;
+text-transform:lowercase; font-size: 14px;   
+}
+.button-min:hover {background: @colfirm2;  color: #896251; }
+.button-min:disabled {background: #fff;  color: #d5d4d4; border: solid 2px #d5d4d4;}
+    
+
+    
+    
+form {float: left; width: 625px;  margin: 15px 0;
+    
+label {color: #666666; font-size: 15px; float: left; width: 100%; margin-bottom: 12px;}    
+label.time {color: @coltxt; font-size: 15px; float: left; width: auto; margin-right: 15px; margin-bottom: 12px;}  
+input, textarea {font-size: 15px; float: left; width: 100%; margin-bottom: 30px; color: @coltxt;
+padding: 10px 18px; border: solid 1px #bcbcbc;  border-radius:  5px;}    
+input:invalid {border: solid 1px #f45653;}    
+input:valid {border: solid 1px #61b871;}    
+input:focus {border: solid 1px #4fa4da;}    
+ 
+input:disabled {border: solid 0px;}
+input.time {font-size: 15px; float: left; width: 78px; margin-bottom: 30px; color: @coltxt;
+padding: 10px 18px; border: solid 1px #bcbcbc;  border-radius:  5px; margin-right: 15px; margin-top: -10px;}
+textarea{height: 175px;}
+}     
+    
+table {float: left; width: 100%; border-bottom: solid 1px #e1e1e1; border-top: 0px;
+tr {float: left; width: 100%; border-left: solid 1px #e1e1e1; border-right: solid 1px #e1e1e1;
+td {width: 200px; font-size: 15px; font-weight: 600; border-right: solid 1px #e1e1e1; border-bottom: solid 1px #e1e1e1; padding: 12px 22px;}
+td:first-child {width: 288px} 
+td:last-child {border-right: solid 0px #e1e1e1;} 
+
+}
+    
+tr:first-child {float: left; width: 100%; background: #e1e1e1;  border-left: solid 0px; border-right: solid 0px;  border-top-left-radius: 15px; border-top-right-radius: 15px;
+td {width: 200px; font-size: 15px; font-weight: 600; border-bottom: solid 0px #e1e1e1;}
+td:first-child {width: 288px}  
+}   
+    
+tr:last-child {float: left; width: 100%;
+td {width: 200px; font-size: 15px; font-weight: 600; border-bottom: solid 0px #e1e1e1;}
+td:first-child {width: 288px}  
+}    
+    
+}    
+    
 }    
 }
 
-
+.float-content {.index-txt {margin-top: 0px;}}
 
 footer {height: 225px; background: #f1f1f1; margin-top: 25px;
 .f-nav {float: left; width: 100%; margin-top: 35px;
@@ -524,7 +616,7 @@ a:hover {color: @colfirm;}
 }
     
 .f-sh {display: block; float: left; width: 100%; height:36px; margin-top: 20px;
-.f-sh_inp-txt {float: left; width: 355px; border-radius: 25px; position: relative; background: #fff; height:36px;
+.f-sh_inp-txt {float: left; width: 355px; border-radius: 25px; position: relative; background: #fff; height:36px; overflow: hidden;
 input {position: absolute; display: block; top:0px; left: 0px; width: 100%; height: 100%; background: transparent;  font-family: @fonttxt3; padding: 0 25px;
 font-style: italic;} 
     
