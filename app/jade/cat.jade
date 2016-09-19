@@ -1,0 +1,351 @@
+doctype html
+html(lang="ru")
+    head
+        include include/head.jade
+    body
+        .wrap
+            header
+                include include/header.jade
+
+            nav
+                .content
+                    ul
+                        li
+                            .middle
+                                a(href="#") Спальни 
+                        li
+                            .middle
+                                a(href="#") Гостинные
+                        li
+                            .middle
+                                a(href="#") Столовые 
+                        li
+                            .middle
+                                a(href="#") Мягкая мебель
+                        li
+                            .middle
+                                a(href="#") Кабинеты
+            section.index-page
+                .content
+                    .index-page__left-block
+                        aside
+                            .index-page__nav-block.active
+                                .index-page__nav-block_t <i class="ico"></i> Спальни
+                                ul
+                                    li: <a href="#">Классические спальни (681)</a>
+                                    li: <a href="#">Прованс спальни (31)</a>
+                                    li: <a href="#">Элитные спальни (287)</a>
+                                    li: <a href="#">Итальянские спальни (64)</a>
+                                    li: <a href="#">Российские спальни (144)</a>
+                                    li: <a href="#">Кровати (3484)</a>
+                                    li: <a href="#">Шкафы платяные (931)</a>
+                                    li: <a href="#">Варианты комплектов (298)</a>
+                                    li: <a href="#">Зеркала спален (395)</a>
+                                    li: <a href="#">Матрасы (96)</a>
+                                    li: <a href="#">Пуфы и банкетки (433)</a>
+                                    li: <a href="#">Столы туалетные (295)</a>
+                                    li: <a href="#">Тумбы прикроватные (493)</a>
+                                    li: <a href="#">Аксессуары спален (85)</a>
+                            .index-page__nav-block
+                                .index-page__nav-block_t <i class="ico"></i> Гостинные
+                            .index-page__nav-block
+                                .index-page__nav-block_t <i class="ico"></i> Столовые
+                            .index-page__nav-block
+                                .index-page__nav-block_t <i class="ico"></i> Мягкая мебель
+                            .index-page__nav-block
+                                .index-page__nav-block_t <i class="ico"></i> Кабинеты
+                                
+                        .index-page__teeser
+                        
+                            .index-page__teeser_item
+                                .index-page__teeser_item_t-block
+                                    span Классическая<br> мебель
+                                    a <i></i>
+                                .index-page__teeser_item_image-block(style="background:url(img/tees1.jpg)")
+                                                 
+                            .index-page__teeser_item
+                                .index-page__teeser_item_t-block
+                                    span Элитная<br> мебель
+                                    a <i></i>
+                                .index-page__teeser_item_image-block(style="background:url(img/tees1.jpg)")
+                                                 
+                            .index-page__teeser_item
+                                .index-page__teeser_item_t-block
+                                    span Мебель прованс
+                                    a <i></i>
+                                .index-page__teeser_item_image-block(style="background:url(img/tees1.jpg)")
+                            
+                            
+                    .float-content
+                        .paginator
+                            a Главная 
+                            span → 
+                            a Спальни
+                            span →
+                            a Современные спальни
+                        h1 Современные спальни
+                        .float-content__filtr
+                        
+                            .float-content__filtr_sl
+                                select
+                                    option Цвет
+                                    option Зеленый
+                                    option Черный
+                                    option Бордовый
+                                    option Белый
+                    
+                        
+                            .float-content__filtr_sl
+                                select
+                                    option Материалы
+                                    option Зеленый
+                                    option Черный
+                                    option Бордовый
+                                    option Белый
+                    
+                        
+                            .float-content__filtr_sl
+                                select
+                                    option Стиль
+                                    option Зеленый
+                                    option Черный
+                                    option Бордовый
+                                    option Белый
+                    
+                        
+                            .float-content__filtr_sl
+                                select
+                                    option Производитель
+                                    option Зеленый
+                                    option Черный
+                                    option Бордовый
+                                    option Белый
+                            .float-content__filtr_t Выбранные параметры:
+                            
+                            .float-content__filtr_item <b>Цвет:</b> Бежевый <a class="close"><span></span></a>
+                            .float-content__filtr_item <b>Материал:</b> Бежевый <a class="close"><span></span></a>
+                            .float-content__filtr_item <b>Стиль:</b> Бежевый <a class="close"><span></span></a>
+                            .float-content__filtr_item <b>Производитель:</b> Бежевый <a class="close"><span></span></a>
+                        .float-content__active-bar
+                            .paginator
+                                a.stick <
+                                a.active 1
+                                a 2
+                                a 3
+                                a ...
+                                a.stick >
+                                
+                            .float-content__active-bar_sl
+                                select
+                                    option Новые поступления
+                                    option Сломаные шкафы
+                            span.float-content__active-bar_t <b>Сортировать по:</b> 
+                                
+                            .float-content__active-bar_sl.min
+                                select
+                                    option 20
+                                    option 15
+                            span.float-content__active-bar_t <b>Товаров на странице: </b> 
+                        
+                        .float-content__catalog
+                        
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc.akc2 
+                                    span скидка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+                                
+                                
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+                                
+                                
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+                                
+                                
+                                                    
+                            a.float-content__catalog_item
+                                img(src="img/tovar.jpg")
+                                .float-content__catalog_item_tag Классическая мебель
+                                .float-content__catalog_item_t Феличита спальня комплект
+                                .float-content__catalog_item_cena Цена <i>230 000 руб.</i> <b>203 400 руб.</b>
+                                .float-content__catalog_item_color
+                                    span Цвета
+                                    .elips-block
+                                        .elips(style="background:#e4decf")
+                                        .elips(style="background:#896251")
+                                        .elips(style="background:#605b59")
+                                        .elips(style="background:#9c9a99")
+                                .float-content__catalog_item_akc 
+                                    span новинка
+                                .float-content__catalog_item_bascet <i></i> В корзину
+                                
+                                
+                        .float-content__active-bar2
+                            .paginator
+                                a.stick <
+                                a.stick-txt Предыдущая
+                                a.active 1
+                                a 2
+                                a 3
+                                a ...
+                                a.stick-txt Следующая
+                                a.stick >
+                                
+                section.index-txt
+                    .content
+                        article
+                            h1 Современные китайские спальни или спальни в стиле модерн
+                            p Каждому человеку необходимо, чтобы спальня была комфортным и уютным местом, радовала глаз и выполняла максимум функций. Мебель в спальной комнате – почти главная составляющая всего интерьера, и порой уходит много времени, чтобы выбрать подходящий дизайн спальни.
+                            p Все чаще внимание людей привлекают современные интерьеры спален. Если вы любите свободное пространство и максимум свободы и еще не знаете, как будет выглядеть ваша спальня, модерн – вариант, который будет радовать вас изо дня в день. Обустроенная спальня в стиле модерн – это минимум деталей и максимум функционала.
+                            p Современная спальня – это, прежде всего, минимализм, современный дизайн спален включает в себя минимум деталей в спальных комплектах. Таким образом, спальня в современном стиле не перегружена мебелью и различными дополнительными деталями, помещение буквально «разгружено» и избавлено от ощущения «захламленности», чего часто не удается избежать в маленьких комнатах. Современный интерьер спальни – это только необходимые многофункциональные предметы интерьера. Спальня в стиле модерн не приемлет предметов, которые будут выполнять только декоративную функцию. Дизайн спален в современном стиле в особенности отмечает в интерьере кровать, которая является центральное местом в спальне, притягивающим все внимание в спальне в стиле минимализм.
+                            p Наш интернет магазин поможет вам создать современный дизайн спальни. В каталоге представлены спальни в стиле модерн китайского производства. Наша мебель отличается функциональностью, внешний вид отвечает всем требованиям стиля, а качество мебели для современной спальни вас непременно будет радовать не один год.
+            footer
+                .content
+                    .f-nav
+                        li: <a href="#">Условия доставки и сборки</a>
+                        li: <a href="#">Условия оплаты</a>
+                        li: <a href="#">Условия возврата и обмена</a>
+                        li: <a href="#">Проверить состояние заказа</a>
+                        li: <a href="#">Реквизиты организации</a>
+                    .f-sh
+                        .f-sh_inp-txt
+                            input(placeholder="Поиск по сайту")
+                            a.button
+                                i.ico
+                    .f-copy
+                        .f-copy_item
+                            span © Mix-mebel.ru мебель на любой вкус 2016
+                        .f-copy_item
+                            ul
+                                li: <a class="vk" href=""></a> 
+                                li: <a class="face" href=""></a> 
+                                li: <a class="od" href=""></a> 
+                                li: <a class="inst" href=""></a> 
+                        
+                        .f-copy_item 
+                            a.it Создано командой Айти Грэйд 
