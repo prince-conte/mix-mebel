@@ -1796,6 +1796,7 @@ nav ul li:last-child a {
   width: 100%;
   height: 440px;
   margin-top: 10px;
+  margin-bottom: 80px;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card {
   float: left;
@@ -1855,14 +1856,15 @@ nav ul li:last-child a {
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card h1 {
   padding: 0 0 30px;
   margin-top: -8px;
+  line-height: 1.2;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_tag {
   display: block;
   width: 100%;
   float: left;
-  font-weight: 300;
   font-size: 16px;
-  margin-bottom: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_tag b {
   font-weight: 700;
@@ -1881,16 +1883,16 @@ nav ul li:last-child a {
   float: left;
   font-weight: 300;
   font-size: 16px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_cena i {
-  font-size: 13px;
+  font-size: 16px;
   font-style: normal;
   font-family: 'PT Sans', sans-serif;
   text-decoration: line-through;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_cena b {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   color: #bc4040;
   font-family: 'PT Sans', sans-serif;
@@ -1901,11 +1903,9 @@ nav ul li:last-child a {
   float: left;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_color span {
-  font-weight: 700;
-  color: #999999;
+  font-weight: 600;
   float: left;
-  margin-bottom: 12px;
-  font-size: 14px;
+  margin-bottom: 20px;
   display: inline-block;
   margin-right: 25px;
 }
@@ -1922,6 +1922,7 @@ nav ul li:last-child a {
   height: 20px;
   border-radius: 50%;
   border: solid 2px transparent;
+  cursor: pointer;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_color .elips-block .elips:hover {
   border: solid 2px #bc4040;
@@ -1953,6 +1954,157 @@ nav ul li:last-child a {
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_bascet:hover {
   background: #efba50;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__linked-block {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__linked-block a {
+  color: #d57979;
+  text-decoration: underline;
+  display: inline;
+  margin-right: 10px;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__linked-block a:hover {
+  color: #950d0d;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__linked-block a::visited {
+  color: #efba50;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .social {
+  float: left;
+  width: 100%;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul {
+  position: relative;
+  display: block;
+  width: 228px;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li {
+  width: 37px;
+  height: 37px;
+  margin: 0 10px;
+  background: #c85151;
+  padding: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  float: left;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li a {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-color: #c85151;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li .face {
+  background-image: url(../img/face.svg) !important;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li .vk {
+  background-image: url(../img/vk.svg);
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li .od {
+  background-image: url(../img/od.svg);
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li .inst {
+  background-image: url(../img/inst.svg);
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li:hover {
+  background: #efba50;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card ul li:hover a {
+  background-color: #efba50;
+}
+.index-page .float-content .teh-block {
+  float: left;
+  width: 100%;
+  border: solid 1px #d4d4d4;
+  position: relative;
+  min-height: 300px;
+}
+.index-page .float-content .teh-block .about {
+  position: absolute;
+  padding: 12px 28px 16px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: solid 1px #d4d4d4;
+  top: -58px;
+  font-size: 21px;
+  font-weight: 700;
+  left: -1px;
+  background: #f2f2f2;
+  margin-right: 20px;
+  display: inline-block;
+}
+.index-page .float-content .teh-block .about:last-child {
+  left: 175px;
+}
+.index-page .float-content .teh-block .active {
+  background: #fff;
+  border-bottom: solid 1px #fff;
+}
+.index-page .float-content .teh-block__txt {
+  float: left;
+  display: block;
+  width: 100%;
+  padding: 30px 20px 40px;
+}
+.index-page .float-content .teh-block__txt p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 17px 0;
+  float: left;
+  display: block;
+  width: 100%;
+}
+.index-page .float-content .teh-block__txt p a {
+  color: #d57979;
+  text-decoration: underline;
+}
+.index-page .float-content .teh-block__txt p a:hover {
+  color: #950d0d;
+}
+.index-page .float-content .teh-block__txt p a::visited {
+  color: #efba50;
+}
+.index-page .float-content .teh-block__txt p:first-child {
+  margin-top: 0px;
+}
+.index-page .float-content .teh-block__txt .desc {
+  padding: 25px 20px;
+  font-style: italic;
+  border: solid 2px #efba50;
+}
+.index-page .float-content .teh-block__txt ul {
+  float: left;
+  width: 100%;
+  padding-bottom: 8px;
+}
+.index-page .float-content .teh-block__txt ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 0;
+  padding-left: 17px;
+  font-weight: 400;
+}
+.index-page .float-content .teh-block__txt ul li::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 19px;
+  width: 6px;
+  height: 6px;
+  background: #bc4040;
+  border-radius: 50%;
 }
 .index-page .index-page__teeser {
   float: left;
