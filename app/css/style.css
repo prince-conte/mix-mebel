@@ -622,6 +622,8 @@ header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phon
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 700;
+  position: relative;
+  top: 4px;
 }
 header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
   color: #bc4040;
@@ -630,7 +632,7 @@ header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phon
 header .h__contacts-block .h__contacts-block_phone-block_but {
   display: inline-block;
   margin: 0 16px;
-  padding: 12px 26px 16px;
+  padding: 6px 26px 10px;
   background: #efba50;
   border-radius: 32px;
   font-size: 16px;
@@ -643,6 +645,7 @@ header .h__contacts-block .h__contacts-block_phone-block_but {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   font-family: 'PT Sans', sans-serif;
+  position: relative;
 }
 header .h__contacts-block .h__contacts-block_phone-block_but .ico {
   display: inline-block;
@@ -664,8 +667,8 @@ header .h__contacts-block .h__contacts-block_info {
   width: 100%;
   float: left;
   font-size: 16px;
-  padding: 15px 0;
-  text-align: center;
+  padding: 10px 0;
+  padding-left: 18px;
   font-family: 'PT Sans', sans-serif;
 }
 header .h__basket-block {
@@ -868,6 +871,22 @@ nav ul li:last-child a {
 .slider-big {
   margin-top: 10px;
 }
+.slider-big .content {
+  width: 1400px;
+}
+.slider-big .content::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 54px;
+  width: 100%;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background: url(../img/sh.png);
+  bottom: -39px;
+  left: 0px;
+}
 .slider-big .slick-arrow {
   position: absolute;
   display: block;
@@ -923,8 +942,11 @@ nav ul li:last-child a {
 .display-cat {
   margin-top: 45px;
   width: calc(100% + 20px);
-  margin-left: -10px;
+  margin-left: 0px;
   overflow: hidden;
+}
+.display-cat .content {
+  width: 1200px;
 }
 .display-cat .display-cat__item {
   position: relative;
@@ -1237,9 +1259,9 @@ nav ul li:last-child a {
   display: inline-block;
   float: left;
   border: solid 3px #efba50;
-  color: #896251;
+  color: #482f24;
   text-transform: uppercase;
-  padding: 12px 18px;
+  padding: 7px 18px;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1454,6 +1476,7 @@ nav ul li:last-child a {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
+  color: #626262;
   border-bottom: dotted 1px #dad7d4;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1620,7 +1643,7 @@ nav ul li:last-child a {
 .index-page .float-content .float-content__filtr .float-content__filtr_reser {
   position: absolute;
   display: block;
-  bottom: 35px;
+  bottom: 16px;
   right: 30px;
   display: inline-block;
 }
@@ -1777,7 +1800,7 @@ nav ul li:last-child a {
 }
 .index-page .float-content .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color span {
   font-weight: 700;
-  color: #999999;
+  color: #a0a0a0;
   float: left;
   margin-bottom: 12px;
   font-size: 14px;
@@ -2440,8 +2463,9 @@ nav ul li:last-child a {
 }
 .index-txt article p {
   font-size: 16px;
-  font-weight: 600;
-  margin: 17px 0;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 10px 0;
   float: left;
   display: block;
   width: 100%;
@@ -2636,8 +2660,10 @@ nav ul li:last-child a {
 }
 footer {
   height: 225px;
-  background: #f1f1f1;
   margin-top: 25px;
+  background-image: -moz-linear-gradient(0deg, #d6d4ce 1%, #f1f1f1 35%);
+  background-image: -webkit-linear-gradient(0deg, #d6d4ce 1%, #f1f1f1 35%);
+  background-image: -ms-linear-gradient(0deg, #d6d4ce 1%, #f1f1f1 35%);
 }
 footer .f-nav {
   float: left;
@@ -2699,19 +2725,19 @@ footer .f-sh .f-sh_inp-txt input {
   font-style: italic;
 }
 footer .f-sh .f-sh_inp-txt ::-webkit-input-placeholder {
-  color: #deddd8;
+  color: #b2b2b2;
   font-style: italic;
 }
 footer .f-sh .f-sh_inp-txt ::-moz-placeholder {
-  color: #deddd8;
+  color: #b2b2b2;
   font-style: italic;
 }
 footer .f-sh .f-sh_inp-txt :-moz-placeholder {
-  color: #deddd8;
+  color: #b2b2b2;
   font-style: italic;
 }
 footer .f-sh .f-sh_inp-txt :-ms-input-placeholder {
-  color: #deddd8;
+  color: #b2b2b2;
   font-style: italic;
 }
 footer .f-sh .f-sh_inp-txt .button {

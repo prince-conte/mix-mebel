@@ -70,18 +70,18 @@ header { margin-bottom: 15px;
 .logo {display: inline-block; width: 271px; height: 96px; .bgCCC; background: url(../img/logo.png);}}
 .h__contacts-block {width: 600px; height: 100%; float: left;
 .h__contacts-block_phone-block {float: left; width: 100%; height: 58px; display: table;
-.h__contacts-block_phone-block_num {display: inline-block; margin: 0 16px; font-family: @fonttxt2; font-size: 20px;  font-weight: 700;
+.h__contacts-block_phone-block_num {display: inline-block; margin: 0 16px; font-family: @fonttxt2; font-size: 20px;  font-weight: 700; position: relative; top:4px;
 .str-col {color: @colfirm; font-size: 30px;}
 }    
 } 
     
-.h__contacts-block_phone-block_but {display: inline-block; margin: 0 16px; padding: 12px 26px 16px; background: #efba50; border-radius: 32px; font-size: 16px; text-transform: uppercase; font-weight: 700; color: #482f24; border: solid 2px @colfirm2; .m-speed;  font-family: @fonttxt3;
+.h__contacts-block_phone-block_but {display: inline-block; margin: 0 16px; padding: 6px 26px 10px; background: #efba50; border-radius: 32px; font-size: 16px; text-transform: uppercase; font-weight: 700; color: #482f24; border: solid 2px @colfirm2; .m-speed;  font-family: @fonttxt3; position: relative;
 .ico {display: inline-block; margin-right: 10px; .bgCCC; background: url(../img/phone.svg); width: 16px; height: 21px; position: relative; top:5px;}    
 }
     
 .h__contacts-block_phone-block_but:hover {background: #fff;}
     
-.h__contacts-block_info {display: block; width: 100%; float: left; font-size: 16px; padding: 15px 0; text-align: center; font-family: @fonttxt3;}
+.h__contacts-block_info {display: block; width: 100%; float: left; font-size: 16px; padding: 10px 0; padding-left: 18px; font-family: @fonttxt3;}
 }
     
 .h__basket-block {width: 280px; height: 100%; float: right; padding: 0 25px; display: inline-table;
@@ -110,7 +110,9 @@ padding: 2px 34px 4px; color: #fff; font-style: italic; font-size: 15px; height:
 :-moz-placeholder           {color:#deddd8; font-style: italic;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#deddd8; font-style: italic;}    
     
-}    
+}  
+    
+
    
 }
 
@@ -168,6 +170,25 @@ li:last-child  {a {border-right: solid 0px;}}
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>index-slide
 
 .slider-big { margin-top: 10px;
+    .content {
+        width: 1400px
+    }
+    
+    .content::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 54px;
+        width: 100%;
+        .bgCCC;
+        background: url(../img/sh.png);
+        bottom: -39px;
+        left: 0px;
+        
+        
+        
+    }
+    
 .slick-arrow  {position: absolute; display: block; top:50%; margin-top: -18px; width: 36px; height: 36px; z-index: 99999;
 .bgCC; background-color: #bdbbb6; background-image: url(../img/sticks.svg); font-size: 0px; color: transparent; 
 
@@ -191,7 +212,8 @@ background: #fff; margin: 0 7px;     cursor: pointer;}
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>display-cat
 
-.display-cat { margin-top: 45px; width: calc(~"100% + 20px"); margin-left: -10px; overflow: hidden;
+.display-cat { margin-top: 45px; width: calc(~"100% + 20px"); margin-left: 0px; overflow: hidden;
+    .content {width: 1200px}
  
 .display-cat__item {position: relative; display: inline-block; float: left; width: 50%; height: 260px; background: #eeeceb;
 border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px;
@@ -312,8 +334,8 @@ span {font-weight: 700;  color: #999999; float: left; margin-bottom: 12px;font-s
 }    
 }
     
-.float-content__catalog_item_bascet {display: inline-block; float: left; border: solid 3px @colfirm2; color: #896251; text-transform: uppercase;
-    padding: 12px 18px; border-radius: 35px; .m-speed;
+.float-content__catalog_item_bascet {display: inline-block; float: left; border: solid 3px @colfirm2; color: #482f24; text-transform: uppercase;
+    padding: 7px 18px; border-radius: 35px; .m-speed;
     i {display: inline-block; .bgCCC; background: url(../img/fat.svg); width: 18px; height: 16px; margin-right: 10px; top:3px; position: relative;}    
 }
 .float-content__catalog_item_bascet:hover {background: @colfirm2; }
@@ -392,7 +414,7 @@ li:last-child { a{border-bottom: dotted 0px @coltxt;}}
     
 .active {
 ul {display: block;}    
-.index-page__nav-block_t {display: block; float: left; width: 100%; padding: 22px 30px; background: #f1f1f1; text-transform: uppercase; font-size: 15px; font-weight: 700;
+.index-page__nav-block_t {display: block; float: left; width: 100%; padding: 22px 30px; background: #f1f1f1; text-transform: uppercase; font-size: 15px; font-weight: 700; color: @coltxt;
 border-bottom: dotted 1px #dad7d4;   .m-speed;  color: @colfirm;
  
 .ico {width: 8px; height: 5px; display: inline-block; .bgCCC; background: url(../img/stick_a.png); position: relative; margin-right: 7px; top:-2px;}       
@@ -430,7 +452,7 @@ span::before {content: ''; position: absolute; display: block; width: 100%; heig
     
 }
 
-.float-content__filtr_reser {position: absolute; display: block; bottom: 35px; right: 30px; display: inline-block; }   
+.float-content__filtr_reser {position: absolute; display: block; bottom: 16px; right: 30px; display: inline-block; }   
 .float-content__filtr_reser:hover {color: @colfirm;}   
 }
 
@@ -468,7 +490,7 @@ i {font-size: 13px; font-style: normal; font-family: @fonttxt3; text-decoration:
 b {font-size: 18px; font-weight: 700; color: @colfirm; font-family: @fonttxt3; }    
 }
 .float-content__catalog_item_color {display: block; width: 100%; float: left;
-span {font-weight:700;  color: #999999; float: left; margin-bottom: 12px;font-size: 14px; display: inline-block; margin-right: 25px;}
+span {font-weight:700;  color: #a0a0a0; float: left; margin-bottom: 12px;font-size: 14px; display: inline-block; margin-right: 25px;}
 .elips-block {display: inline-block; float: left; margin-bottom: 15px;
     .elips {display: inline-block; float: left; margin: 0 10px; width: 20px; height: 20px; border-radius: 50%; border: solid 2px transparent;}
     .elips:hover {border: solid 2px @colfirm;}
@@ -729,7 +751,7 @@ i { .bgCCC; background: url(../img/next.svg); display: block; width: 36px; heigh
 article {float: left; width: 100%;
 h2 { margin-bottom: 20px; float: left;  display: block; width: 100%;}    
 
-p {font-size: 16px; font-weight: 600; margin: 17px 0;  float: left;  display: block; width: 100%;
+p {font-size: 16px; line-height: 24px; font-weight: 700; margin: 10px 0;  float: left;  display: block; width: 100%;
 
 a {color:#d57979; text-decoration:underline;}    
 a:hover {color:#950d0d; }    
@@ -793,7 +815,10 @@ textarea{height: 175px;}
 
 .float-content {.index-txt {margin-top: 0px;}}
 
-footer {height: 225px; background: #f1f1f1; margin-top: 25px;
+footer {height: 225px; margin-top: 25px;
+  background-image: -moz-linear-gradient( 0deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
+  background-image: -ms-linear-gradient( 0deg, rgb(214,212,206) 1%, rgb(241,241,241) 35%);
 .f-nav {float: left; width: 100%; margin-top: 35px;
 li {float:left; height: 100%;
 a {font-size: 16px; display: inline-block; padding: 14px 23px 5px; border-right: solid 1px #cccccc; font-family: @fonttxt3; .m-speed;}}
@@ -808,10 +833,10 @@ a:hover {color: @colfirm;}
 input {position: absolute; display: block; top:0px; left: 0px; width: 100%; height: 100%; background: transparent;  font-family: @fonttxt3; padding: 0 25px;
 font-style: italic;} 
     
-::-webkit-input-placeholder {color:#deddd8; font-style: italic;}
-::-moz-placeholder          {color:#deddd8; font-style: italic;}/* Firefox 19+ */
-:-moz-placeholder           {color:#deddd8; font-style: italic;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#deddd8; font-style: italic;}    
+::-webkit-input-placeholder {color:#b2b2b2; font-style: italic;}
+::-moz-placeholder          {color:#b2b2b2; font-style: italic;}/* Firefox 19+ */
+:-moz-placeholder           {color:#b2b2b2; font-style: italic;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#b2b2b2; font-style: italic;}    
   
 .button {position: absolute; display: block; width: 30px; height: 100%; right: 25px; top:0px; border: solid 0px;
 .ico {display: inline-block; height: 20px; width: 20px; .bgCCC; background: url(../img/sh2.svg);  
