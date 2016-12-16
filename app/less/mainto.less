@@ -17,21 +17,21 @@ h6 {font-size: 18px; font-weight: 400;}
 
 // table
 
-table {float: left; width: 100%; border-bottom: solid 1px #e1e1e1; border-top: 0px;
-tr {float: left; width: 100%; border-left: solid 1px #e1e1e1; border-right: solid 1px #e1e1e1;
-td {width: 200px; font-size: 15px; font-weight: 600; border-right: solid 1px #e1e1e1; border-bottom: solid 1px #e1e1e1; padding: 12px 22px;}
+table {float: left; width: 100%; border-bottom: solid 1px #b4b4b3; border-top: 0px;
+tr {float: left; width: 100%; border-left: solid 1px #b4b4b3; border-right: solid 1px #b4b4b3;
+td {width: 200px; font-size: 15px; font-weight: 600; border-right: solid 1px #b4b4b3; border-bottom: solid 1px #b4b4b3; padding: 12px 22px;}
 td:first-child {width: 288px} 
-td:last-child {border-right: solid 0px #e1e1e1;} 
+td:last-child {border-right: solid 0px #b4b4b3;} 
 
 }
     
 tr:first-child {float: left; width: 100%; background: #e1e1e1;  border-left: solid 0px; border-right: solid 0px;  border-top-left-radius: 15px; border-top-right-radius: 15px;
-td {width: 200px; font-size: 15px; font-weight: 600; border-bottom: solid 0px #e1e1e1;}
+td {width: 200px; font-size: 15px; font-weight: 600; border-bottom: solid 0px #b4b4b3;}
 td:first-child {width: 288px}  
 }   
     
 tr:last-child {float: left; width: 100%;
-td {width: 200px; font-size: 15px; font-weight: 600; border-bottom: solid 0px #e1e1e1;}
+td {width: 200px; font-size: 15px; font-weight: 600; border-bottom: solid 0px #b4b4b3;}
 td:first-child {width: 288px}  
 }    
     
@@ -40,7 +40,7 @@ td:first-child {width: 288px}
 
     
 .item_bascet {display: inline-block; float: left; border: solid 3px @colfirm2; color: #896251; text-transform: uppercase;
-    padding: 12px 18px; border-radius: 35px; .m-speed;
+    padding: 7px 18px; border-radius: 35px; .m-speed; font-size: 13px;
     i {display: inline-block; .bgCCC; background: url(../img/fat.svg); width: 18px; height: 16px; margin-right: 10px; top:3px; position: relative;}    
 }
 .item_bascet:hover {background: @colfirm2; }   
@@ -64,7 +64,7 @@ header, section, footer, nav {float: left; width: 100%; min-height: 20px;}
 
 header { margin-bottom: 15px;
 
-.h__info-line {float: left; width: 100%; font-size: 16px; font-weight: 700; display: block; padding: 12px 0 18px; text-transform: uppercase;} 
+.h__info-line {float: left; width: 100%; font-size: 16px; font-weight: 600; display: block; padding: 12px 0 18px; text-transform: uppercase;} 
 .h__firm-line {float: left; width: 100%; height: 96px; }
 .h__logo-block {float: left; width: 300px; height: 100%; display: inline-table;
 .logo {display: inline-block; width: 271px; height: 96px; .bgCCC; background: url(../img/logo.png);}}
@@ -81,7 +81,7 @@ header { margin-bottom: 15px;
     
 .h__contacts-block_phone-block_but:hover {background: #fff;}
     
-.h__contacts-block_info {display: block; width: 100%; float: left; font-size: 16px; padding: 10px 0; padding-left: 18px; font-family: @fonttxt3;}
+.h__contacts-block_info {display: block; width: 100%; float: left; font-size: 17px; padding: 10px 0; padding-left: 18px; font-family: @fonttxt3;}
 }
     
 .h__basket-block {width: 280px; height: 100%; float: right; padding: 0 25px; display: inline-table;
@@ -97,7 +97,7 @@ header { margin-bottom: 15px;
 .h__search-line {float: left; display: block; width: 100%; margin-top: 12px;height: 30px; position: relative;
 .h__search-line-in-txt {position: absolute; top:0px; left:0px; display: block; width: 100%; height: 100%; padding: 1px 27px 4px;  border: solid 2px #deddd8; border-radius: 35px; font-size: 15px; }
 .h__search-line-btn{position: absolute; display: block; right: 0px; top: 0px; background: @colfirm; border-top-right-radius: 35px; border-bottom-right-radius: 35px;
-padding: 2px 34px 4px; color: #fff; font-style: italic; font-size: 15px; height: 100%; .m-speed;
+padding: 2px 23px 4px; color: #fff; font-style: italic; font-size: 15px; height: 100%; .m-speed;
 .ico {display: inline-block; width: 18px; height: 18px; margin: 0 10px; top:5px; .bgCCC; background: url(../img/sh.svg); position: relative;}    
 
 }
@@ -230,7 +230,6 @@ background: #fff; margin: 0 7px;     cursor: pointer;}
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>display-cat
 
 .display-cat { margin-top: 45px; width: calc(~"100% + 20px"); margin-left: 0px; overflow: hidden;
-    .content {width: 1200px}
  
 .display-cat__item {position: relative; display: inline-block; float: left; width: 50%; height: 260px; background: #eeeceb;
 border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px;
@@ -242,7 +241,7 @@ a {font-family: @fonttxt3; font-size: 15px; display: inline; text-decoration: un
 a:hover {color: @colfirm;}
 }    
     
-.button { margin-top: 28px; display: inline-block; float: left; border: solid 3px #efba50; color: #896251; padding: 7px 18px 10px; border-radius: 35px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; font-family: @fonttxt3;}
+.button { margin-top: 28px; display: inline-block; float: left; border: solid 3px #efba50; color: #482f24; padding: 7px 18px 10px; border-radius: 35px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; font-family: @fonttxt3; font-size: 14px}
 .button:hover {background: @colfirm2;}   
 
     
@@ -259,7 +258,7 @@ border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px
 .display-cat__item_txt {float: left; width: 100%; height: auto; padding: 40px 30px;
     
 .display-cat__item_txt_t {float: left; display: block; width: 100%; font-family: @fonttxt3; font-size: 22px; font-weight: 700; }    
-.button { margin-top: 10px; display: inline-block; float: left; border: solid 3px #efba50; color: #896251; padding: 7px 18px 10px; border-radius: 35px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; font-family: @fonttxt3;}
+.button { margin-top: 10px; display: inline-block; float: left; border: solid 3px #efba50; color: #482f24; padding: 7px 18px 10px; border-radius: 35px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; font-family: @fonttxt3; font-size: 14px}
 .button:hover {background: @colfirm2;}   
     
     
@@ -272,6 +271,7 @@ border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px
 }
 
 
+
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>teeser-index
 
 .teeser-index {  margin-top: 45px; width: calc(~"100% + 20px"); margin-left: -10px;
@@ -279,7 +279,7 @@ border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px
 .teeser-index__item {position: relative; display: inline-block; float: left; width: 33.333333%; height: 100px; background: #eeeceb;
 border-left: solid 10px #fff; border-right: solid 10px #fff; margin-bottom: 20px; overflow: hidden;
     
-.teeser-index__item_t-block { float: left; width: 100%; height: 100%; padding: 20px 0 0 24px; background: #bc4040; display: table; position: relative; overflow: hidden;
+.teeser-index__item_t-block { float: left; width: 100%; height: 100%; padding: 20px 0 0 24px; background: #c74d4d; display: table; position: relative; overflow: hidden;
 
 span { color: #fff; font-size: 20px; font-style: italic; font-family: 'Roboto', sans-serif; font-weight: 700; line-height: 1.4;}   
     
@@ -352,7 +352,7 @@ span {font-weight: 700;  color: #999999; float: left; margin-bottom: 12px;font-s
 }
     
 .float-content__catalog_item_bascet {display: inline-block; float: left; border: solid 3px @colfirm2; color: #482f24; text-transform: uppercase;
-    padding: 7px 18px; border-radius: 35px; .m-speed;
+    padding: 7px 18px; border-radius: 35px; .m-speed; font-size: 13px;
     i {display: inline-block; .bgCCC; background: url(../img/fat.svg); width: 18px; height: 16px; margin-right: 10px; top:3px; position: relative;}    
 }
 .float-content__catalog_item_bascet:hover {background: @colfirm2; }
@@ -393,7 +393,7 @@ span {font-weight: 700;  color: #999999; float: left; margin-bottom: 12px;font-s
   }      
 
 
-
+.display-cat-w {.content{width: 1200px}    }
 
 
 
@@ -413,7 +413,7 @@ border-bottom: dotted 1px #dad7d4;   .m-speed;
 ul {float: left; width: 100%; display: none;
 li {float: left; width: 100%; padding: 0 30px;position: relative; background: #fff;
 a {font-size: 14px; display: block; padding: 8px 8px 10px;  border-bottom: dotted 1px @coltxt;}    
-a::after {    content: ''; position: absolute; width: 26px; height: 26px; background: #bc4040; -moz-transform: rotate(224deg); -ms-transform: rotate(224deg); -webkit-transform: rotate(224deg); -o-transform: rotate(224deg); transform: rotate(224deg); top: 6px; right: -13px; display: none;}
+a::after {    content: ''; position: absolute; width: 26px; height: 26px; background: #c74d4d; -moz-transform: rotate(224deg); -ms-transform: rotate(224deg); -webkit-transform: rotate(224deg); -o-transform: rotate(224deg); transform: rotate(224deg); top: 6px; right: -13px; display: none;}
 }
 
 li:last-child { a{border-bottom: dotted 0px @coltxt;}}
@@ -488,7 +488,7 @@ a.stick:hover {background: #fff; color: @colfirm;}
    
 .floating {float: right}    
 .float-content__active-bar_t {float: right;  width:auto; display: inline-block; margin-right: 4px; padding: 20px 0; font-size: 14px; b {font-weight: 700; letter-spacing: initial !important;}} 
-.float-content__active-bar_sl{float: right; margin-right: 14px; border-radius: 45px; border: solid 2px #efba50; 
+.float-content__active-bar_sl{float: right; margin-right: 14px; border-radius: 45px; border: solid 2px #efba50;  overflow: hidden;
 margin: 14px; margin-right: 0px; height: 35px; width: 176px;
 select {float: left; width: 100%; height: 100%; position: relative; border-radius: 45px; padding: 2px 12px; font-size: 13px;}    }   
 .min {width: 90px; margin-right: 14px; overflow: hidden;}
@@ -597,7 +597,7 @@ span {font-weight: 600; float: left; margin-bottom: 20px; display: inline-block;
 }
     
 .tovar-block__tovar-card__catalog_item_bascet {display: inline-block; float: left; border: solid 3px @colfirm2; color: #896251; text-transform: uppercase;
-    padding: 12px 18px; border-radius: 35px; .m-speed;
+    padding: 7px 18px; border-radius: 35px; .m-speed; font-size: 13px;
     i {display: inline-block; .bgCCC; background: url(../img/fat.svg); width: 18px; height: 16px; margin-right: 10px; top:3px; position: relative;}    
 }
 .tovar-block__tovar-card__catalog_item_bascet:hover {background: @colfirm2; }   
@@ -639,7 +639,7 @@ a {display: block; float: left; width: 100%; height: 100%; .bgCCC; background-co
     
 // teh-block    
   
-.teh-block {float: left; width: 100%; border: solid 1px #d4d4d4; position: relative; min-height: 300px; 
+.teh-block {float: left; width: 100%; border: solid 1px #e1e1e1; position: relative; min-height: 300px; 
 .about {position: absolute; padding: 12px 28px 16px; border-top-left-radius: 15px;  border-top-right-radius: 15px; border: solid 1px #d4d4d4;
 top: -58px;   font-size: 21px; font-weight: 700; left: -1px; 
 background: #f2f2f2; margin-right: 20px; display: inline-block;
@@ -661,17 +661,17 @@ background: #f2f2f2; margin-right: 20px; display: inline-block;
 .compleet-block_dv_t{
 float: left; width: 100%; background: #e1e1e1; border-left: solid 0px; border-right: solid 0px; border-top-left-radius: 15px; border-top-right-radius: 15px;
 .compleet-block_dv_t_item {width: 257px; padding: 9px 14px; vertical-align: top; float: left;
-font-size: 15px; font-weight: 600; border-bottom: solid 0px #e1e1e1;   
+font-size: 15px; font-weight: 600; border-bottom: solid 0px #b4b4b3;   
 }
 .compleet-block_dv_t_item:first-child  {width: 430px;}
 .compleet-block_dv_t_item:last-child {width: 189px;}
 }    
-.compleet-block_dv_line { float: left; width: 100%; border-left: solid 1px #e1e1e1; border-right: solid 1px #e1e1e1; border-bottom: solid 1px #e1e1e1; height: 118px;
-.compleet-block_dv_line_item { width: 257px; padding: 9px 14px; float: left; font-weight: 600; border-right: solid 1px #e1e1e1; height: 100%;
+.compleet-block_dv_line { float: left; width: 100%; border-left: solid 1px #b4b4b3; border-right: solid 1px #b4b4b3; border-bottom: solid 1px #b4b4b3; height: 118px;
+.compleet-block_dv_line_item { width: 257px; padding: 9px 14px; float: left; font-weight: 600; border-right: solid 1px #b4b4b3; height: 100%;
 span {float: left; width: 100%; margin-bottom: 16px; font-weight: 600;}    
 }   
 .compleet-block_dv_line_item:first-child {width: 430px;}   
-.compleet-block_dv_line_item:last-child {width: 189px;border-right: solid 0px #e1e1e1; }
+.compleet-block_dv_line_item:last-child {width: 189px;border-right: solid 0px #b4b4b3; }
 }
     
 }   
@@ -767,7 +767,8 @@ i { .bgCCC; background: url(../img/next.svg); display: block; width: 36px; heigh
 
 .index-txt { margin-top: 40px; float: left; width: 100%;
 article {float: left; width: 100%;
-h2 { margin-bottom: 20px; float: left;  display: block; width: 100%;}    
+h2 { margin-bottom: 20px; float: left;  display: block; width: 100%;}   
+h1 {margin-bottom: 20px}
 
 p {font-size: 16px; line-height: 24px; font-weight: 700; margin: 10px 0;  float: left;  display: block; width: 100%;
 
@@ -1045,7 +1046,9 @@ span {display: inline-block; float: left;}
     width: 980px;
 }
    
-    
+.display-cat-w .content {
+    width: 1000px;
+} 
 .content {width: 980px;}   
 
 header .h__info-line {font-size: 12px;}
@@ -1056,7 +1059,7 @@ header .h__logo-block .logo {width: 200px; height: 96px;}
 
 
 header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
-    color: #bc4040;font-size: 22px;
+    color: #c74d4d;font-size: 22px;
 }  
     
 header .h__contacts-block {
@@ -1154,7 +1157,7 @@ table tr:first-child td {
     width: 200px;
     font-size: 12px;
     font-weight: 600;
-    border-bottom: solid 0px #e1e1e1;
+    border-bottom: solid 0px #b4b4b3;
 }   
     
 table tr:last-child td {
@@ -1223,9 +1226,11 @@ span {float: left; width: 100%; margin-bottom: 16px; font-weight: 600;}
 }
 
     
-@media screen and (min-width:760px) and (max-width:999px) {
+@media screen and (min-width:660px) and (max-width:999px) {
     
-    
+.display-cat-w .content {
+    width: 100%
+    }
     
 .slider-big .slider-big__info {
     top: 61px;
@@ -1267,7 +1272,7 @@ header .h__logo-block .logo {width: 200px; height: 85px;}
 
 
 header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
-    color: #bc4040;font-size: 22px;
+    color: #c74d4d;font-size: 22px;
 }  
     
 header .h__firm-line {
@@ -1552,7 +1557,6 @@ span {float: left; width: 100%; margin-bottom: 16px; font-weight: 600;}
     
 }  
     
-    
 
 @media screen and (min-width:320px) and (max-width:659px)   {
     
@@ -1586,7 +1590,7 @@ header .h__logo-block .logo {width: 200px; height: 85px;}
 
 
 header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
-    color: #bc4040;font-size: 22px;
+    color: #c74d4d;font-size: 22px;
 }  
     
 header .h__firm-line {
@@ -1750,7 +1754,7 @@ header .h__search-line .h__search-line-btn {
     display: block;
     right: 0px;
     top: 0px;
-    background: #bc4040;
+    background: #c74d4d;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     padding: 2px 10px 4px;
@@ -1994,7 +1998,7 @@ footer .f-copy .f-copy_item .it {
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_cena b {
     font-size: 20px;
     font-weight: 700;
-    color: #bc4040;
+    color: #c74d4d;
     font-family: 'PT Sans', sans-serif;
 }
     

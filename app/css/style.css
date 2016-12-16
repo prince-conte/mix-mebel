@@ -461,28 +461,28 @@ h6 {
 table {
   float: left;
   width: 100%;
-  border-bottom: solid 1px #e1e1e1;
+  border-bottom: solid 1px #b4b4b3;
   border-top: 0px;
 }
 table tr {
   float: left;
   width: 100%;
-  border-left: solid 1px #e1e1e1;
-  border-right: solid 1px #e1e1e1;
+  border-left: solid 1px #b4b4b3;
+  border-right: solid 1px #b4b4b3;
 }
 table tr td {
   width: 200px;
   font-size: 15px;
   font-weight: 600;
-  border-right: solid 1px #e1e1e1;
-  border-bottom: solid 1px #e1e1e1;
+  border-right: solid 1px #b4b4b3;
+  border-bottom: solid 1px #b4b4b3;
   padding: 12px 22px;
 }
 table tr td:first-child {
   width: 288px;
 }
 table tr td:last-child {
-  border-right: solid 0px #e1e1e1;
+  border-right: solid 0px #b4b4b3;
 }
 table tr:first-child {
   float: left;
@@ -497,7 +497,7 @@ table tr:first-child td {
   width: 200px;
   font-size: 15px;
   font-weight: 600;
-  border-bottom: solid 0px #e1e1e1;
+  border-bottom: solid 0px #b4b4b3;
 }
 table tr:first-child td:first-child {
   width: 288px;
@@ -510,7 +510,7 @@ table tr:last-child td {
   width: 200px;
   font-size: 15px;
   font-weight: 600;
-  border-bottom: solid 0px #e1e1e1;
+  border-bottom: solid 0px #b4b4b3;
 }
 table tr:last-child td:first-child {
   width: 288px;
@@ -521,12 +521,13 @@ table tr:last-child td:first-child {
   border: solid 3px #efba50;
   color: #896251;
   text-transform: uppercase;
-  padding: 12px 18px;
+  padding: 7px 18px;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 13px;
 }
 .item_bascet i {
   display: inline-block;
@@ -580,7 +581,7 @@ header .h__info-line {
   float: left;
   width: 100%;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   display: block;
   padding: 12px 0 18px;
   text-transform: uppercase;
@@ -666,7 +667,7 @@ header .h__contacts-block .h__contacts-block_info {
   display: block;
   width: 100%;
   float: left;
-  font-size: 16px;
+  font-size: 17px;
   padding: 10px 0;
   padding-left: 18px;
   font-family: 'PT Sans', sans-serif;
@@ -736,7 +737,7 @@ header .h__search-line .h__search-line-btn {
   background: #bc4040;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  padding: 2px 34px 4px;
+  padding: 2px 23px 4px;
   color: #fff;
   font-style: italic;
   font-size: 15px;
@@ -971,9 +972,6 @@ nav ul li:last-child a {
   margin-left: 0px;
   overflow: hidden;
 }
-.display-cat .content {
-  width: 1200px;
-}
 .display-cat .display-cat__item {
   position: relative;
   display: inline-block;
@@ -1019,7 +1017,7 @@ nav ul li:last-child a {
   display: inline-block;
   float: left;
   border: solid 3px #efba50;
-  color: #896251;
+  color: #482f24;
   padding: 7px 18px 10px;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
@@ -1027,6 +1025,7 @@ nav ul li:last-child a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
 }
 .display-cat .display-cat__item .display-cat__item_txt .button:hover {
   background: #efba50;
@@ -1072,7 +1071,7 @@ nav ul li:last-child a {
   display: inline-block;
   float: left;
   border: solid 3px #efba50;
-  color: #896251;
+  color: #482f24;
   padding: 7px 18px 10px;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
@@ -1080,6 +1079,7 @@ nav ul li:last-child a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
 }
 .display-cat .display-cat__item_min .display-cat__item_txt .button:hover {
   background: #efba50;
@@ -1106,7 +1106,7 @@ nav ul li:last-child a {
   width: 100%;
   height: 100%;
   padding: 20px 0 0 24px;
-  background: #bc4040;
+  background: #c74d4d;
   display: table;
   position: relative;
   overflow: hidden;
@@ -1293,6 +1293,7 @@ nav ul li:last-child a {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 13px;
 }
 .display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_bascet i {
   display: inline-block;
@@ -1390,6 +1391,9 @@ nav ul li:last-child a {
   /* Для Opera */
   transform: rotate(180deg);
 }
+.display-cat-w .content {
+  width: 1200px;
+}
 .index-page {
   margin-top: 12px;
 }
@@ -1463,7 +1467,7 @@ nav ul li:last-child a {
   position: absolute;
   width: 26px;
   height: 26px;
-  background: #bc4040;
+  background: #c74d4d;
   -moz-transform: rotate(224deg);
   -ms-transform: rotate(224deg);
   -webkit-transform: rotate(224deg);
@@ -1736,6 +1740,7 @@ nav ul li:last-child a {
   margin-right: 14px;
   border-radius: 45px;
   border: solid 2px #efba50;
+  overflow: hidden;
   margin: 14px;
   margin-right: 0px;
   height: 35px;
@@ -2112,12 +2117,13 @@ nav ul li:last-child a {
   border: solid 3px #efba50;
   color: #896251;
   text-transform: uppercase;
-  padding: 12px 18px;
+  padding: 7px 18px;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 13px;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_bascet i {
   display: inline-block;
@@ -2204,7 +2210,7 @@ nav ul li:last-child a {
 .index-page .float-content .teh-block {
   float: left;
   width: 100%;
-  border: solid 1px #d4d4d4;
+  border: solid 1px #e1e1e1;
   position: relative;
   min-height: 300px;
 }
@@ -2260,7 +2266,7 @@ nav ul li:last-child a {
   float: left;
   font-size: 15px;
   font-weight: 600;
-  border-bottom: solid 0px #e1e1e1;
+  border-bottom: solid 0px #b4b4b3;
 }
 .index-page .float-content .compleet-block .compleet-block_dv .compleet-block_dv_t .compleet-block_dv_t_item:first-child {
   width: 430px;
@@ -2271,9 +2277,9 @@ nav ul li:last-child a {
 .index-page .float-content .compleet-block .compleet-block_dv .compleet-block_dv_line {
   float: left;
   width: 100%;
-  border-left: solid 1px #e1e1e1;
-  border-right: solid 1px #e1e1e1;
-  border-bottom: solid 1px #e1e1e1;
+  border-left: solid 1px #b4b4b3;
+  border-right: solid 1px #b4b4b3;
+  border-bottom: solid 1px #b4b4b3;
   height: 118px;
 }
 .index-page .float-content .compleet-block .compleet-block_dv .compleet-block_dv_line .compleet-block_dv_line_item {
@@ -2281,7 +2287,7 @@ nav ul li:last-child a {
   padding: 9px 14px;
   float: left;
   font-weight: 600;
-  border-right: solid 1px #e1e1e1;
+  border-right: solid 1px #b4b4b3;
   height: 100%;
 }
 .index-page .float-content .compleet-block .compleet-block_dv .compleet-block_dv_line .compleet-block_dv_line_item span {
@@ -2295,7 +2301,7 @@ nav ul li:last-child a {
 }
 .index-page .float-content .compleet-block .compleet-block_dv .compleet-block_dv_line .compleet-block_dv_line_item:last-child {
   width: 189px;
-  border-right: solid 0px #e1e1e1;
+  border-right: solid 0px #b4b4b3;
 }
 .index-page .float-content .compleet-block td {
   width: 257px;
@@ -2493,6 +2499,9 @@ nav ul li:last-child a {
   float: left;
   display: block;
   width: 100%;
+}
+.index-txt article h1 {
+  margin-bottom: 20px;
 }
 .index-txt article p {
   font-size: 16px;
@@ -2964,6 +2973,9 @@ footer .f-copy .f-copy_item .it {
   .slider-big .content {
     width: 980px;
   }
+  .display-cat-w .content {
+    width: 1000px;
+  }
   .content {
     width: 980px;
   }
@@ -2978,7 +2990,7 @@ footer .f-copy .f-copy_item .it {
     height: 96px;
   }
   header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
-    color: #bc4040;
+    color: #c74d4d;
     font-size: 22px;
   }
   header .h__contacts-block {
@@ -3060,7 +3072,7 @@ footer .f-copy .f-copy_item .it {
     width: 200px;
     font-size: 12px;
     font-weight: 600;
-    border-bottom: solid 0px #e1e1e1;
+    border-bottom: solid 0px #b4b4b3;
   }
   table tr:last-child td {
     font-size: 12px;
@@ -3150,7 +3162,10 @@ footer .f-copy .f-copy_item .it {
     border-right: solid 0px #e1e1e1;
   }
 }
-@media screen and (min-width: 760px) and (max-width: 999px) {
+@media screen and (min-width: 660px) and (max-width: 999px) {
+  .display-cat-w .content {
+    width: 100%;
+  }
   .slider-big .slider-big__info {
     top: 61px;
     left: 125px;
@@ -3191,7 +3206,7 @@ footer .f-copy .f-copy_item .it {
     height: 85px;
   }
   header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
-    color: #bc4040;
+    color: #c74d4d;
     font-size: 22px;
   }
   header .h__firm-line {
@@ -3492,7 +3507,7 @@ footer .f-copy .f-copy_item .it {
     height: 85px;
   }
   header .h__contacts-block .h__contacts-block_phone-block .h__contacts-block_phone-block_num .str-col {
-    color: #bc4040;
+    color: #c74d4d;
     font-size: 22px;
   }
   header .h__firm-line {
@@ -3625,7 +3640,7 @@ footer .f-copy .f-copy_item .it {
     display: block;
     right: 0px;
     top: 0px;
-    background: #bc4040;
+    background: #c74d4d;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     padding: 2px 10px 4px;
@@ -3829,7 +3844,7 @@ footer .f-copy .f-copy_item .it {
   .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_cena b {
     font-size: 20px;
     font-weight: 700;
-    color: #bc4040;
+    color: #c74d4d;
     font-family: 'PT Sans', sans-serif;
   }
   .index-page .float-content .teh-block .about {
