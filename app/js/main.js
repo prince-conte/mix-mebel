@@ -23,4 +23,11 @@ $(document).on('ready', function() {
         infinite: true,
         variableWidth: true
       });
+    
+    
+
+    $('.float-content__catalog_item').equalHeights();
+    $('.float-content__catalog_item_t').equalHeights();
+    
+    
     });

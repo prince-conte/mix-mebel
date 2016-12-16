@@ -10,6 +10,7 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.equalheights.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|PT+Sans:400,700|Roboto:400,700" rel="stylesheet">
   </head>
   <body>
@@ -155,24 +156,27 @@
               <div class="float-content__filtr_item"><b>Цвет:</b> Бежевый <a class="close"><span></span></a></div>
               <div class="float-content__filtr_item"><b>Материал:</b> Бежевый <a class="close"><span></span></a></div>
               <div class="float-content__filtr_item"><b>Стиль:</b> Бежевый <a class="close"><span></span></a></div>
-              <div class="float-content__filtr_item"><b>Производитель:</b> Бежевый <a class="close"><span></span></a></div>
+              <div class="float-content__filtr_item"><b>Производитель:</b> Бежевый <a class="close"><span></span></a></div><a class="float-content__filtr_reser">Очистить все</a>
             </div>
             <div class="float-content__active-bar">
               <div class="paginator"><a class="stick"><</a><a class="active">1</a><a>2</a><a>3</a><a>...</a><a class="stick">></a></div>
-              <div class="float-content__active-bar_sl">
-                <select>
-                  <option>Новые поступления</option>
-                  <option>Сломаные шкафы</option>
-                </select>
-              </div><span class="float-content__active-bar_t"><b>Сортировать по:</b> </span>
-              <div class="float-content__active-bar_sl min">
-                <select>
-                  <option>20</option>
-                  <option>15</option>
-                </select>
-              </div><span class="float-content__active-bar_t"><b>Товаров на странице: </b> </span>
+              <div class="floating">    
+                <div class="float-content__active-bar_sl">
+                  <select>
+                    <option>Новые поступления</option>
+                    <option>Сломаные шкафы</option>
+                  </select>
+                </div><span class="float-content__active-bar_t"><b>Сортировать по:</b> </span>
+                <div class="float-content__active-bar_sl min">
+                  <select>
+                    <option>20</option>
+                    <option>15</option>
+                  </select>
+                </div><span class="float-content__active-bar_t"><b>Товаров на странице: </b> </span>
+              </div>
             </div>
-            <div class="float-content__catalog"><a class="float-content__catalog_item"><img src="img/tovar.jpg">
+            <div class="float-content__catalog"><a class="float-content__catalog_item">
+                <div class="float-content__catalog_image"><img src="img/tovar.jpg"></div>
                 <div class="float-content__catalog_item_tag">Классическая мебель</div>
                 <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
                 <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
@@ -185,7 +189,8 @@
                   </div>
                 </div>
                 <div class="float-content__catalog_item_akc akc2"> <span>скидка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
+                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item">
+                <div class="float-content__catalog_image"><img src="img/tovar.jpg"></div>
                 <div class="float-content__catalog_item_tag">Классическая мебель</div>
                 <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
                 <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
@@ -197,8 +202,9 @@
                     <div style="background:#9c9a99" class="elips"></div>
                   </div>
                 </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
+                <div class="float-content__catalog_item_akc akc2"> <span>скидка</span></div>
+                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item">
+                <div class="float-content__catalog_image"><img src="img/tovar.jpg"></div>
                 <div class="float-content__catalog_item_tag">Классическая мебель</div>
                 <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
                 <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
@@ -210,8 +216,9 @@
                     <div style="background:#9c9a99" class="elips"></div>
                   </div>
                 </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
+                <div class="float-content__catalog_item_akc akc2"> <span>скидка</span></div>
+                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item">
+                <div class="float-content__catalog_image"><img src="img/tovar.jpg"></div>
                 <div class="float-content__catalog_item_tag">Классическая мебель</div>
                 <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
                 <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
@@ -223,8 +230,9 @@
                     <div style="background:#9c9a99" class="elips"></div>
                   </div>
                 </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
+                <div class="float-content__catalog_item_akc akc2"> <span>скидка</span></div>
+                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item">
+                <div class="float-content__catalog_image"><img src="img/tovar.jpg"></div>
                 <div class="float-content__catalog_item_tag">Классическая мебель</div>
                 <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
                 <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
@@ -236,10 +244,11 @@
                     <div style="background:#9c9a99" class="elips"></div>
                   </div>
                 </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
+                <div class="float-content__catalog_item_akc akc2"> <span>скидка</span></div>
+                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item">
+                <div class="float-content__catalog_image"><img src="img/tovar.jpg"></div>
                 <div class="float-content__catalog_item_tag">Классическая мебель</div>
-                <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
+                <div class="float-content__catalog_item_t">Феличита спальня комплект еличита спальня комплект</div>
                 <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
                 <div class="float-content__catalog_item_color"><span>Цвета</span>
                   <div class="elips-block">
@@ -249,46 +258,7 @@
                     <div style="background:#9c9a99" class="elips"></div>
                   </div>
                 </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
-                <div class="float-content__catalog_item_tag">Классическая мебель</div>
-                <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
-                <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
-                <div class="float-content__catalog_item_color"><span>Цвета</span>
-                  <div class="elips-block">
-                    <div style="background:#e4decf" class="elips"></div>
-                    <div style="background:#896251" class="elips"></div>
-                    <div style="background:#605b59" class="elips"></div>
-                    <div style="background:#9c9a99" class="elips"></div>
-                  </div>
-                </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
-                <div class="float-content__catalog_item_tag">Классическая мебель</div>
-                <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
-                <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
-                <div class="float-content__catalog_item_color"><span>Цвета</span>
-                  <div class="elips-block">
-                    <div style="background:#e4decf" class="elips"></div>
-                    <div style="background:#896251" class="elips"></div>
-                    <div style="background:#605b59" class="elips"></div>
-                    <div style="background:#9c9a99" class="elips"></div>
-                  </div>
-                </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
-                <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a><a class="float-content__catalog_item"><img src="img/tovar.jpg">
-                <div class="float-content__catalog_item_tag">Классическая мебель</div>
-                <div class="float-content__catalog_item_t">Феличита спальня комплект</div>
-                <div class="float-content__catalog_item_cena">Цена <i>230 000 руб.</i> <b>203 400 руб.</b></div>
-                <div class="float-content__catalog_item_color"><span>Цвета</span>
-                  <div class="elips-block">
-                    <div style="background:#e4decf" class="elips"></div>
-                    <div style="background:#896251" class="elips"></div>
-                    <div style="background:#605b59" class="elips"></div>
-                    <div style="background:#9c9a99" class="elips"></div>
-                  </div>
-                </div>
-                <div class="float-content__catalog_item_akc"> <span>новинка</span></div>
+                <div class="float-content__catalog_item_akc akc2"> <span>скидка</span></div>
                 <div class="float-content__catalog_item_bascet"><i></i> В корзину</div></a></div>
             <div class="float-content__active-bar2">
               <div class="paginator"><a class="stick"><</a><a class="stick-txt">Предыдущая</a><a class="active">1</a><a>2</a><a>3</a><a>...</a><a class="stick-txt">Следующая</a><a class="stick">></a></div>
