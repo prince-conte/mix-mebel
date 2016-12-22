@@ -438,6 +438,24 @@ h6 {
   float: left;
   width: 100%;
 }
+.elips .elips-title {
+  position: absolute;
+  display: none;
+  padding: 5px 7px;
+  border: solid 1px #b1b0b0;
+  background: #f1f1f1;
+  font-size: 12px;
+  color: #626262;
+  left: 30px;
+  top: -17px;
+  z-index: 9999;
+}
+.elips:hover .elips-title {
+  display: block;
+}
+button {
+  width: 0px;
+}
 .h_line {
   display: block;
   text-align: center;
@@ -682,6 +700,12 @@ header .h__basket-block {
 header .h__basket-block .basket-block_body {
   float: left;
   width: 70px;
+}
+header .h__basket-block .basket-block_body img {
+  height: 38px;
+  width: auto;
+  position: relative;
+  margin: 0 auto;
 }
 header .h__basket-block .basket-block_body_t {
   display: block;
@@ -1277,9 +1301,25 @@ nav ul li:last-child a {
   height: 20px;
   border-radius: 50%;
   border: solid 2px transparent;
+  position: relative;
+  cursor: pointer;
 }
-.display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .elips:hover {
-  border: solid 2px #bc4040;
+.display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .active .elips-ramka {
+  opacity: 1;
+}
+.display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .elips-ramka {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 30px;
+  top: -7px;
+  left: -7px;
+  border-radius: 50%;
+  height: 30px;
+  border: solid 1px #bc4040;
+}
+.display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .elips-ramka:hover {
+  opacity: 1;
 }
 .display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_bascet {
   display: inline-block;
@@ -1858,9 +1898,21 @@ nav ul li:last-child a {
   height: 20px;
   border-radius: 50%;
   border: solid 2px transparent;
+  position: relative;
 }
-.index-page .float-content .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .elips:hover {
-  border: solid 2px #bc4040;
+.index-page .float-content .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .elips-ramka {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 30px;
+  top: -7px;
+  left: -7px;
+  border-radius: 50%;
+  height: 30px;
+  border: solid 1px #bc4040;
+}
+.index-page .float-content .float-content__catalog .float-content__catalog_item .float-content__catalog_item_color .elips-block .elips-ramka:hover {
+  opacity: 1;
 }
 .index-page .float-content .float-content__catalog .float-content__catalog_item .float-content__catalog_item_bascet {
   display: inline-block;
@@ -2107,9 +2159,21 @@ nav ul li:last-child a {
   border-radius: 50%;
   border: solid 2px transparent;
   cursor: pointer;
+  position: relative;
 }
-.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_color .elips-block .elips:hover {
-  border: solid 2px #bc4040;
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_color .elips-block .elips-ramka {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 30px;
+  top: -7px;
+  left: -7px;
+  border-radius: 50%;
+  height: 30px;
+  border: solid 1px #bc4040;
+}
+.index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_color .elips-block .elips-ramka:hover {
+  opacity: 1;
 }
 .index-page .float-content .tovar-block .tovar-block__tovar-card .tovar-block__tovar-card__info-card .tovar-block__tovar-card__catalog_item_bascet {
   display: inline-block;
@@ -2280,7 +2344,7 @@ nav ul li:last-child a {
   border-left: solid 1px #b4b4b3;
   border-right: solid 1px #b4b4b3;
   border-bottom: solid 1px #b4b4b3;
-  height: 118px;
+  min-height: 118px;
 }
 .index-page .float-content .compleet-block .compleet-block_dv .compleet-block_dv_line .compleet-block_dv_line_item {
   width: 257px;
@@ -2317,12 +2381,13 @@ nav ul li:last-child a {
 .index-page .float-content .compleet-block .td__tovar-block {
   float: left;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
 }
 .index-page .float-content .compleet-block .td__tovar-block .td__tovar-block_img {
   float: left;
   width: 135px;
   height: 100%;
+  min-height: 100px;
   background-position: CENTER CENTER;
   background-repeat: no-repeat !important;
   background-size: COVER !important;
@@ -2421,6 +2486,7 @@ nav ul li:last-child a {
   height: 200px;
   position: relative;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 .index-page .index-page__teeser .index-page__teeser_item .index-page__teeser_item_t-block {
   float: left;
@@ -2501,7 +2567,7 @@ nav ul li:last-child a {
   width: 100%;
 }
 .index-txt article h1 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .index-txt article p {
   font-size: 16px;
@@ -3138,7 +3204,7 @@ footer .f-copy .f-copy_item .it {
     border-left: solid 1px #e1e1e1;
     border-right: solid 1px #e1e1e1;
     border-bottom: solid 1px #e1e1e1;
-    height: 118px;
+    min-height: 118px;
   }
   .compleet-block_dv .compleet-block_dv_line .compleet-block_dv_line_item {
     width: 20% !important;
@@ -3449,7 +3515,7 @@ footer .f-copy .f-copy_item .it {
     font-weight: 600;
     border-right: solid 1px #e1e1e1;
     height: 100%;
-    height: 45px !important;
+    min-height: 45px !important;
   }
   .compleet-block_dv .compleet-block_dv_line .compleet-block_dv_line_item span {
     float: left;
@@ -3640,7 +3706,7 @@ footer .f-copy .f-copy_item .it {
     display: block;
     right: 0px;
     top: 0px;
-    background: #c74d4d;
+    background: #c64c4c;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     padding: 2px 10px 4px;
