@@ -1363,13 +1363,16 @@ nav ul li:last-child a {
   top: 37px;
 }
 .display-cat .float-content__catalog .float-content__catalog_item .float-content__catalog_item_akc span {
-  color: #fff;
+  color: #482f24;
   font-size: 14px;
   padding: 4px 18px;
   display: block;
 }
 .display-cat .float-content__catalog .float-content__catalog_item .akc2 {
   background: url(../img/akc2.png);
+}
+.display-cat .float-content__catalog .float-content__catalog_item .akc2 span {
+  color: #fff;
 }
 .display-cat .regular .slick-arrow {
   position: absolute;
@@ -1955,7 +1958,7 @@ nav ul li:last-child a {
   top: 37px;
 }
 .index-page .float-content .float-content__catalog .float-content__catalog_item .float-content__catalog_item_akc span {
-  color: #fff;
+  color: #482f24;
   font-size: 14px;
   padding: 4px 18px;
   display: block;
