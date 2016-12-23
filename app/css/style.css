@@ -1963,6 +1963,9 @@ nav ul li:last-child a {
 .index-page .float-content .float-content__catalog .float-content__catalog_item .akc2 {
   background: url(../img/akc2.png);
 }
+.index-page .float-content .float-content__catalog .float-content__catalog_item .akc1 span {
+  color: #533827;
+}
 .index-page .float-content .float-content__catalog_item:hover {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 0px 0px 8px 0px rgba(7, 9, 10, 0.52);
